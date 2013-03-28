@@ -92,15 +92,15 @@ Prihlasovací formulár:
 	- s kontrolou na správnosť: "Zadali ste nesprávne heslo."
 - Odosielacie tlačidlo "Prihlásiť"
 
-Odkaz na stránku [Registrácia](#registracia).
+Odkaz na stránku [Registrácia](#registrácia).
 
-Odkaz na stránku [Zabudnuté heslo](#zabudnute-heslo).
+Odkaz na stránku [Zabudnuté heslo](#zabudnuté-heslo).
 
 Formulár bude obsahovať protispamové prvky.
 
-Po odoslaní je používateľ prihlásený s oznámením "Boli Ste prihlásený.". Ak prihlásenie prebehne v poriadku, tak je používateľ presmerovaný na stránku [Zoznam aukcií](#zoznam-aukcii).
+Po odoslaní je používateľ prihlásený s oznámením "Boli Ste prihlásený.". Ak prihlásenie prebehne v poriadku, tak je používateľ presmerovaný na stránku [Zoznam aukcií](#zoznam-aukcií).
 
-### Registrácia {#registracia}
+### Registrácia
 
 Ktorýkoľvek neprihlásený používateľ.
 
@@ -186,7 +186,7 @@ Formulár pre aktiváciu účtu:
 
 Po odoslaní kódu sa aktivuje účet, ku ktorému bol aktivačný kód odoslaný. Po odoslaní je zobrazené oznámenie "Účet bol úspešne aktivovaný."
 
-### Stránka pre zabudnuté heslo {#zabudnute-heslo}
+### Stránka pre zabudnuté heslo
 
 Ku stránke bude mať prístup iba Návštevník.
 
@@ -450,7 +450,7 @@ K akcií bude mať prístup iba kontrolór.
 
 Po schválení je správca kontrolór presmerovaný na stránku "Zoznam ponúk" kde následne vyberie výhercu.
 
-### Zoznam aukcií {#zoznam-aukcii}
+### Zoznam aukcií
 
 - Návštevník vidí:
 	- zoznam neukončených (aj nezačatých aukcií)
