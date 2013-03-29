@@ -100,37 +100,23 @@ Ktorýkoľvek neprihlásený používateľ.
 
 Registračný formulár:
 
-- Textové pole "Prihlasovacie meno"
-	- s kontrolou na vyplnenie: "Zadajte prosím Prihlasovacie meno."
-	- s kontrolou na počet znakov: "Prihlasovacie meno musí mať minimálne 5 znakov."
-- Textové pole "E-mail"
-	- s kontrolou na vyplnenie: "Zadajte prosím e-mail."
-	- s kontrolou na správny formát mailu: "Zadajte prosím platný e-mail."
-- Textové pole "Heslo"
-	- s kontrolou na vyplnenie: "Zadajte prosím heslo."
-	- s kontrolou na počet znakov: "Heslo musí mať minimálne 5 znakov."
-- Textové pole "Zopakovať heslo"
-	- s kontrolou na vyplnenie: "Zopakujte prosím heslo."
-	- s kontrolou na rovnosť s prvým zadaným heslom: "Heslá sa musia zhodovať."
-- Textové pole "Obchodné meno"
-	- s kontrolou na vyplnenie: "Zadajte prosím Obchodné meno."
-	- s kontrolou na počet znakov: "Obchodné meno musí mať minimálne 5 znakov."
-- Textové pole "Ulica"
-	- s kontrolou na vyplnenie: "Zadajte prosím ulicu."
-	- s kontrolou na počet znakov: "Ulica musí mať minimálne 5 znakov."
-- Textové pole "Mesto"
-	- s kontrolou na vyplnenie: "Zadajte prosím Mesto."
-	- s kontrolou na počet znakov: "Mesto musí mať minimálne 5 znakov."
-- Textové pole "PSČ"
-	- s kontrolou na vyplnenie: "Zadajte prosím PSČ."
-	- s kontrolou na počet znakov a čísla: "PSČ musí obsahovať 5 čísel."
 - Textové pole "IČO"
 	- s kontrolou na vyplnenie: "Zadajte prosím IČO."
 	- s kontrolou číselného typu: "IČO musí obsahovať iba čísla."
 	- s kontrolou na počet znakov: "IČO musí byť 6 až 8 miestne číslo."
+- Odosielacie tlačidlo "Načítať údaje podla IČO"
+	- po kliknutí sa načítajú údaje do formulára z [orsr.sk](http://orsr.sk)/[zrsr.sk](http://zrsr.sk)
+- Textové pole "Obchodné meno"
+	- s kontrolou na vyplnenie: "Zadajte prosím Obchodné meno."
+- Textové pole "Ulica"
+	- s kontrolou na vyplnenie: "Zadajte prosím ulicu."
+- Textové pole "Mesto"
+	- s kontrolou na vyplnenie: "Zadajte prosím Mesto."
+- Textové pole "PSČ"
+	- s kontrolou na vyplnenie: "Zadajte prosím PSČ."
+	- s kontrolou na počet znakov a čísla: "PSČ musí obsahovať 5 čísel."
 - Textové pole "Meno oprávnenej osoby"
 	- s kontrolou na vyplnenie: "Zadajte prosím meno oprávnenej osoby."
-	- s kontrolou na počet znakov: "Meno oprávnenej osoby musí mať aspoň 5 znakov."
 - Textové pole "Telefonický kontakt"
 	- s kontrolou na vyplnenie: "Zadajte prosím telefónne číslo."
 	- s kontrolou na správny formát telefónneho čísla: "Zadajte prosím platné telefónne číslo."
@@ -143,6 +129,18 @@ Registračný formulár:
 	- s medzerami aj bez nich
 - Viacriadkové textové pole "Referencie"
 - Certifikáty a osvedčenia (polia na upload skenovaných osvedčení) -ak sa dá tak neobmedzený počet ak nie tak asi 4 polia
+- Textové pole "Prihlasovacie meno"
+	- s kontrolou na vyplnenie: "Zadajte prosím Prihlasovacie meno."
+	- s kontrolou na počet znakov: "Prihlasovacie meno musí mať minimálne 5 znakov."
+- Textové pole "E-mail"
+	- s kontrolou na vyplnenie: "Zadajte prosím e-mail."
+	- s kontrolou na správny formát mailu: "Zadajte prosím platný e-mail."
+- Textové pole "Heslo"
+	- s kontrolou na vyplnenie: "Zadajte prosím heslo."
+	- s kontrolou na počet znakov: "Heslo musí mať minimálne 5 znakov."
+- Textové pole "Zopakovať heslo"
+	- s kontrolou na vyplnenie: "Zopakujte prosím heslo."
+	- s kontrolou na rovnosť s prvým zadaným heslom: "Heslá sa musia zhodovať."
 - Odosielacie tlačidlo "Registrovať"
 
 Pri registrácii si bude môcť súťažiaci vybrať, či chce dostávať notifikácie o nových aukciách, pričom si bude môcť vybrať typy aukcií zo zoznamu.
@@ -153,7 +151,7 @@ V prípade ak sa používateľ pokúsi registrovať na už registrované prihlas
 
 Všetky údaje sú povinné okrem nahratia certifikátov. Pri odoslaní by sa malo overiť IČO voči www.orsr.sk. Formulár bude obsahovať protispamové prvky.
 
-### Aktivácia účtu
+###Aktivácia účtu
 
 Ku stránke bude mať prístup iba Návštevník.
 
@@ -236,7 +234,7 @@ Podnadpis "Zmena prihlasovacieho mena".
 
 Po úspešnom spracovaní niektorého z formulárov sa následne odošle na kontaktnú mailovú adresu [mail](#mail-s-novými-prihlasovacími-údajmi).
 
-### Zoznam používateľov
+###Zoznam používateľov
 
 Ku stránke bude mať prístup iba Správca.
 
@@ -353,7 +351,7 @@ Ku stránke môže predvolene pristupovať Správca, následne aj používateľ 
 
 Osoba s poverením bude môcť pri zobrazení ktorejkoľvek aukcie kliknúť na "duplikuj". Následne bude presmerovaná na Pridanie aukcie s predvyplnenými údajmi zduplikovanými z pôvodnej aukcie. Načítajú sa údaje predchádzajúcej aukcie, vrátane predchádzajúcich súťažiacich.
 
-Formulár pre zmenu pridanie aukcie:
+Formulár pre pridanie aukcie:
 
 - Textové pole "Názov aukcie"
 	- s kontrolou na vyplnenie: "Zadajte prosím Názov aukcie."
@@ -372,7 +370,9 @@ Formulár pre zmenu pridanie aukcie:
 - Textové pole "Garancia ceny (v dňoch)"
 	- s kontrolou na celočíselný vstup
 - Textové pole so zoznamom súťažiacich
-	- Zaškrtávacie pole "Súkromná aukcia"
+- Zaškrtávacie pole "Súkromná aukcia"
+- Výberové pole "Kontrolór aukcie"
+	- bude obsahovať zoznam používateľov
 - Vloženie parametrov ponúk:
 	- Textové pole
 		- názov
@@ -418,7 +418,9 @@ Kontrolór bude mať možnosť aukciu schváliť. Po schválení sa [pozívací 
 
 K akcií bude mať prístup iba kontrolór.
 
-Po schválení je správca kontrolór presmerovaný na stránku "Zoznam ponúk" kde následne vyberie výhercu. Po schválení priebehu aukcie a výbere výhercu sa výhercovi pošle [mail o výhre](#mail-súťažiacemu-o-výhre) a ostatným zúčastneným mail s poďakovaním za účasť.
+Po schválení je správca kontrolór presmerovaný na stránku "Zoznam ponúk" kde následne vyberie výhercu. Ak bol zvolený víťaz, je mu automaticky zaslaný [gratulačný mail](#mail-súťažiacemu-o-výhre). Ostatným zúčastneným je odoslaný [mail s poďakovaním za účasť](#mail-súťažiacemu-s-poďakovaním-za-účasť).
+
+O schválení priebehu aukcie bude [operátor informovaný mailom](#mail-operátorovi-o-schválení-priebehu-aukcie).
 
 ###Zoznam aukcií
 
@@ -470,19 +472,17 @@ Možné zadať iba ak aukcia práve prebieha.
 
 Formulár pre pridanie ponuky bude obsahovať polia zvolené pri vytváraní aukcie. Parametre musí byť validné podľa nastavenia aukcie.
 
-### Úprava ponuky
+###Úprava ponuky
 
 Tlačidlo "Upraviť ponuku" pridá novú ponuku zobrazí údaje aktuálnej ponuky. Po stlačení sa údaje uložia vnútorne ako nová ponuka, ktorá v prehľade ponúk nahradí súčasnú ponuku. Pôvodná (stará ponuka) sa uloží do histórie. Históriu ponúk si bude môcť pozerať operátor. Nová ponuka nebude môcť obsahovať vyššiu sumu ako posledná pridaná ponuka od toho istého používateľa.
 
-### Zoznam ponúk
+###Zoznam ponúk
 
 Iba pre účty s oprávnením.
 
-Zoznam všetkých podaných ponúk. Po ukončení ponúk bude možné označiť konkrétnu ponuku ako víťaznú. Ukončiť výberové konanie bude možné aj bez výberu víťaza – aukcia bude ukončená bez víťaza.
+Zoznam všetkých podaných ponúk. 
 
-Ak bol zvolený víťaz, je mu automaticky zaslaný [gratulačný mail](#mail-súťažiacemu-o-výhre).
-
-Ostatným zúčastneným je odoslaný [mail s poďakovaním za účasť](#mail-súťažiacemu-s-poďakovaním-za-účasť).
+Export do PDF.
 
 ###Zmazanie ponuky
 
@@ -498,7 +498,7 @@ Export do PDF.
 
 #Prílohy
 
-## Maily
+##Maily
 
 ###Mail s aktiváciou účtu
 
@@ -628,6 +628,16 @@ Predmet: **Vaša ponuka nebola vybraná**
 >
 >S pozdravom DRU, a. s.
 
+###Mail operátorovi o schválení priebehu aukcie
+
+Predmet: **Priebeh aukcie bol schválený**
+
+>Vážený {MENO},
+>
+>aukcia {NÁZOV AUKCIE S AKTÍVNYM ODKAZOM NA DETAIL AUKCIE} bola schválená.
+>
+>S pozdravom DRU, a. s.
+
 ###Mail kontrolórom o pridaní aukcie
 
 Predmet: **Nová aukcia**
@@ -661,7 +671,7 @@ Predmet: **Ukončenie aukcie**
 >
 >S pozdravom DRU, a. s.
 
-## Návod na prevod detailného návrhu do PDF
+##Návod na prevod detailného návrhu do PDF
 
 ###Inštalácia prostredia
 	
