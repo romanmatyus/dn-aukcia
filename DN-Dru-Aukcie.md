@@ -105,7 +105,7 @@ Registračný formulár:
 	- s kontrolou číselného typu: "IČO musí obsahovať iba čísla."
 	- s kontrolou na počet znakov: "IČO musí byť 6 až 8 miestne číslo."
 - Odosielacie tlačidlo "Načítať údaje podla IČO"
-	- po kliknutí sa načítajú údaje do formulára z [orsr.sk](http://orsr.sk)/[zrsr.sk](http://zrsr.sk)
+	- po kliknutí sa načítajú údaje do formulára z [orsr.sk](http://orsr.sk)/[zrsr.sk](http://www.zrsr.sk)
 - Textové pole "Obchodné meno"
 	- s kontrolou na vyplnenie: "Zadajte prosím Obchodné meno."
 - Textové pole "Ulica"
