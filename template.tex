@@ -8,6 +8,8 @@
 \usepackage[usenames,dvipsnames]{xcolor}
 \usepackage{lastpage} % total page count
 
+\let\quoteOLD\quote
+\def\quote{\quoteOLD\small}
 
 \let\stdsection\section
 \renewcommand*{\section}{\clearpage\stdsection}

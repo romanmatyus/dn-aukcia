@@ -1,19 +1,19 @@
 % Detailný návrh služby DRU - Aukcia
 % Roman Mátyus
 
-# Cieľ riešenia
+#Cieľ riešenia
 
 Cieľom projektu je zabezpečiť firme DRU, a. s. (ďalej objednávateľ) webovú aplikáciu na vyhlasovanie reverzných aukcií a jej dodávateľom možnosť aukcie sa zúčastniť.
 
 Podmienkou dodania je licencovanie produktu pod otvorenou licenciou BSD. Zdrojový kód musí byť jasne štrukturovaný a komentovaný.
 
-# Charakteristika dokumentu
+#Charakteristika dokumentu
 
-## Forma
+##Forma
 
 V texte sa nachádzajú slová v zložených zátvorkách, ktoré budú vo výslednej aplikácií nahradené za zodpovedajúci údaj. Napríklad {MENO} bude v aplikácií nahradené za meno klienta, spoločnosti, prípadne iné podľa kontextu.
 
-## Účel
+##Účel
 
 Dokument slúži ako záväzný podklad pre vypracovanie aplikácie. Akékoľvek zmeny funkčnosti vykonané vykonávateľom musia byť vopred odsúhlasené objednávateľom. Zmeny by mali mať iba účel zjednodušenia implementácie alebo zvýšenia komfortu používania aplikácie.
 
@@ -21,9 +21,9 @@ Zmeny navrhnuté objednávateľom po odsúhlasení tohoto dokumentu budú spopla
 
 Funkcionalita systému bude pred odovzdaním riadne preverená dodávateľom. Po odovzdaní predmetného diela je objednávateľ povinný skontrolovať dodané dielo a nahlásiť nezrovnalosti oproti detailnému návrhu. Tieto budú opravené na náklady dodávateľa. 
 
-# Popis riešenia
+#Popis riešenia
 
-## Schéma
+##Schéma
 
 Schémy popisovaného riešenia sú v prílohách:
 
@@ -32,11 +32,11 @@ Schémy popisovaného riešenia sú v prílohách:
 - akcie operátorov - akcie-operatora.png
 - akcie kontrolórov - akcie-kontrolora.png
 
-## Lokalizácia
+##Lokalizácia
 
 Aplikácia nebude disponovať možnosťou zmeny lokalizácie. Všetky zobrazované texty budú iba v slovenskom jazyku. Aplikácia môže obsahovať predprípravu pre budúcu lokalizáciu.
 
-## Prístupové práva
+##Prístupové práva
 
 Systém bude obsahovať detailné možnosti nastavenia prístupových práv. Preddefinovane bude obsahovať skupiny používateľov, ktoré budú môcť byť v systéme detailne nastavené, prípadne doplnené alebo odstránené. Práva budú môcť byť špecifické aj na úrovni jednotlivých používateľov.
 
@@ -48,37 +48,31 @@ Každá akcia, resp. stránka bude mať predvolene nastavené oprávnenie k prí
 
 V prípade snahy o prístup do zabezpečenej časti aplikácie neprihláseným používateľom je používateľ s vyzvaním "Pokúšate sa vykonať akciu na ktorú nemáte oprávnenie" presmerovaný na stránku s prihlasovacím formulárom. V prípade ak je používateľ prihlásený, tak je zobrazená chybová stránka 403 Access Denied s oznámením "Pokúšate sa zobraziť obsah na ktorý nemáte oprávnenie.". Takýto incident je automaticky archivovaný.
 
-### Návštevník
+###Návštevník
 
 Toto právo sa vzťahuje na neprihláseného návštevníka webaplikácie. Tento človek má právo vidieť pripravované aukcie (t.j. vytvorené ale neskončené), vrátane ich údajov, nesmie sa však zapojiť do aukcie.
 
-### Súťažiaci
+###Súťažiaci
 
-Do tejto skupiny používateľov patria prihlásené firmy. Cieľom skupiny je umožniť používateľom zapojenie sa do aukcií. Tento človek smie vidieť iba kódy iných súťažiacich. Svoj kód uvidí inou farbou (nap. červenou) uvidí teda len poradie v akom sa v aukcii nachádza.
+Do tejto skupiny používateľov patria prihlásené firmy. Cieľom skupiny je umožniť používateľom zapojenie sa do aukcií.
 
-Súťažiaci dostane mail vždy, keď klesne v poradí (t.j. keď ho niekto predbehne).
+###Operátor
 
-### Operátor
+Túto skupinu prideľuje administrátor. Skupina je určená pre zamestnancov firmy - správcov jednotlivých kategórií aukcií. Môžu zadávať, upravovať a mazať aukcie svojej kategórie, počas priebehu aukcie však nemôžu vidieť priebeh súťaže s údajmi. Môžu vidieť len počet uchádzačov zúčastnených v aukcii.
 
-Túto skupinu prideľuje administrátor. Skupina je určená pre zamestnancov firmy - správcov jednotlivých kategórií aukcií. Môžu zadávať, upravovať a mazať aukcie svojej kategórie, počas priebehu aukcie však nemôžu vidieť priebeh súťaže s údajmi. Môžu vidieť len počet uchádzačov zúčastnených v aukcii. Systém by ich mal informovať mailom o pribudnutí nového uchádzača.
-
-### Kontrolór
+###Kontrolór
 
 Ľudia čo budú schvaľovať zverejnenie aukcie ako takej. Ďalej budú ako prvý informovaní o výsledkoch aukcie a odsúhlasia zverejnenie výsledkov aukcie pre operátorov. t.j. operátor si bude môcť zobraziť výsledok aukcie až po odsúhlasení touto kategóriou.
 
-Tejto kategórii príde mail, že v systéme je nová aukcia s odkazom s odkazom na stránku kde uvidí podrobnosti s aukciou a bude tam aj tlačidlo schváliť.
-
-Ihneď po skončení aukcie zasa dostane mail s informáciou, že skončila aukcia s odkazom na stránku kde si bude môcť pozrieť výsledky aukcie a bude tam mať tlačidlo sprístupniť výsledky operátorovi.
-
-### Správca
+###Správca
 
 Toto právo sa vzťahuje na poverenú osobu spravujúcu aplikáciu bez obmedzení.
 
-# Popis podstránok
+#Popis podstránok
 
-## Používateľský účet
+##Používateľský účet
 
-### Prihlasovanie
+###Prihlasovanie
 
 Ku stránke bude mať prístup iba Návštevník.
 
@@ -100,7 +94,7 @@ Formulár bude obsahovať protispamové prvky.
 
 Po odoslaní je používateľ prihlásený s oznámením "Boli Ste prihlásený.". Ak prihlásenie prebehne v poriadku, tak je používateľ presmerovaný na stránku [Zoznam aukcií](#zoznam-aukcií).
 
-### Registrácia
+###Registrácia
 
 Ktorýkoľvek neprihlásený používateľ.
 
@@ -153,16 +147,7 @@ Registračný formulár:
 
 Pri registrácii si bude môcť súťažiaci vybrať, či chce dostávať notifikácie o nových aukciách, pričom si bude môcť vybrať typy aukcií zo zoznamu.
 
-Pri registrácií sa odošle e-mail o registrácií a vyplnené údaje sa uložia. Na mail vyplnený pri registrácií sa odošle e-mail s predmetom "Váš účet bol vytvorený" a textom: "Vážený <meno>,
-
-bol Vám vytvorený účet. K účtu sa môžete prihlásiť použitím prihlasovacích údajov:
-
-Prihlasovacie meno: {MENO}
-Heslo: {HESLO}.
-
-Pre aktiváciu účtu prosím kliknite na odkaz: {ODKAZ}
-Prípadne môžete zadať overovací kód {10 MIESTNY KÓD} na stránku {ODKAZ}.
-S pozdravom DRU, a. s.".
+Pri registrácií sa odošle [e-mail o registrácií](#mail-s-aktiváciou-účtu) a vyplnené údaje sa uložia.
 
 V prípade ak sa používateľ pokúsi registrovať na už registrované prihlasovacie meno zobrazí sa oznámenie, "Prihlasovacie meno už existuje.". Ak je vyplnený mail už v systéme, je používateľ upozornený oznámením "Zvolený mail sa už v systéme nachádza." V prípade úspešnej registrácie sa zobrazí oznámenie "Registrácia bola úspešná.". Ak registrácia prebehne v poriadku, používateľ bude presmerovaný na stránku Aktivácia účtu.
 
@@ -186,7 +171,7 @@ Formulár pre aktiváciu účtu:
 
 Po odoslaní kódu sa aktivuje účet, ku ktorému bol aktivačný kód odoslaný. Po odoslaní je zobrazené oznámenie "Účet bol úspešne aktivovaný."
 
-### Stránka pre zabudnuté heslo
+###Stránka pre zabudnuté heslo
 
 Ku stránke bude mať prístup iba Návštevník.
 
@@ -198,17 +183,11 @@ Formulár pre odoslanie nového hesla:
 	- s kontrolou na existenciu: "Zadali ste neregistrované Prihlasovacie meno."
 - Odosielacie tlačidlo "Zaslať nové heslo"
 
-Po odoslaní formulára sa vygeneruje nové heslo a na e-mailovú adresu patriacu k prihlasovaciemu menu sa odošle e-mail s predmetom "Nové heslo" a textom: "Vážený <meno>,
-
-na žiadosť Vám bolo k Vášmu účtu vygenerované nové heslo: {HESLO}
-
-V prípade, že Ste o nové heslo nežiadali, nič sa nedeje, stále môžete používať Vaše staré heslo.
-
-S pozdravom DRU, a. s.".
+Po odoslaní formulára sa vygeneruje nové heslo a na e-mailovú adresu patriacu k prihlasovaciemu menu sa odošle [e-mail](#mail-s-novým-heslom).
 
 Po odoslaní e-mailu sa zobrazí oznámenie "Na email {EMAIL} Vám bolo zaslané nové heslo.". Používateľ nebude nikam presmerovaný.
 
-### Údaje o zákazníkovi
+###Údaje o zákazníkovi
 
 Ku stránke bude mať prístup každý okrem Návštevníka.
 
@@ -222,7 +201,7 @@ Odosielacie tlačidlo bude nahradené za text "Uložiť".
 
 Po odoslaní sa zmenené údaje uložia. Po spracovaní sa zobrazí oznámenie "Údaje boli uložené.". 
 
-### Prihlasovacie údaje zákazníka
+###Prihlasovacie údaje zákazníka
 
 Ku stránke bude mať prístup každý okrem Návštevníka.
 
@@ -255,16 +234,7 @@ Podnadpis "Zmena prihlasovacieho mena".
 	- s kontrolou na rovnosť s prvým zadaným heslom: "Polia pre nové heslo sa musia zhodovať."
 - Odosielacie tlačidlo "Zmeniť heslo."
 
-Po úspešnom spracovaní niektorého z formulárov sa následne odošle na kontaktnú mailovú adresu mail s predmetom "Nové prihlasovacie údaje" a textom: 
-
-"Vážený <meno>,
-
-na žiadosť Vám boli zmenené prihlasovacie údaje k Vášmu účtu:
-
-Prihlasovacie meno: {MENO}
-Heslo: {HESLO}.
-
-S pozdravom DRU, a. s.".
+Po úspešnom spracovaní niektorého z formulárov sa následne odošle na kontaktnú mailovú adresu [mail](#mail-s-novými-prihlasovacími-údajmi).
 
 ### Zoznam používateľov
 
@@ -288,17 +258,17 @@ Obsahom bude tabuľka (GRID) obsahujúca zoznam používateľov systému so stĺ
 		- Pred odstránením, je nutné potvrdiť kontrolnú otázku "Skutočne chcete odstrániť používateľa {MENO}?"
 - Stránkovanie po 25, 50, 100
 
-### Odhlásenie
+###Odhlásenie
 
 Ku stránke môže pristupovať ktokoľvek.
 
 Používateľ je odhlásený a presmerovaný na hlavnú stránku.
 
-## Skupiny používateľov
+##Skupiny používateľov
 
 Sekcia slúži na správu skupín používateľov. Skupiny môže poverená osoba v systéme spravovať a nastavovať im rôzne úrovne oprávnenia.
 
-### Zoznam skupín
+###Zoznam skupín
 
 Ku stránke môže pristupovať Správca.
 
@@ -320,7 +290,7 @@ Obsahom bude tabuľka (GRID) obsahujúca zoznam skupín v systéme so stĺpcami:
 		- Pred odstránením, je nutné potvrdiť kontrolnú otázku "Skutočne chcete odstrániť skupinu {NÁZOV SKUPINY}?"
 - Stránkovanie po 25, 50, 100
 
-### Úprava práv skupiny
+###Úprava práv skupiny
 
 Ku stránke môže pristupovať Správca.
 
@@ -349,11 +319,11 @@ Obsahom bude tabuľka (GRID) obsahujúca zoznam oprávnení pre konkrétnu entit
 
 Vstupy budú ošetrené tak, aby nebolo možné definovať pre jednu entitu viac ako jedno oprávnenie toho istého typu.
 
-### Kategorizácia
+###Kategorizácia
 
 Kategorizácia bude nerekurzná - bez zanorenia kategórií.
 
-### Zoznam kategórií
+###Zoznam kategórií
 
 Ku stránke môže pristupovať Správca.
 
@@ -373,9 +343,11 @@ Obsahom bude tabuľka (GRID) obsahujúca zoznam kategórií aukcií so stĺpcami
 - Stránkovanie po 25, 50, 100.
 - Inline pridávanie kategórií.
 
-## Aukcia
+##Aukcia
 
-### Pridanie aukcie
+Ihneď po skončení aukcie dostane kontrolór [mail o skončení aukcie](#mail-kontrolórom-o-skončení-aukcie).
+
+###Pridanie aukcie
 
 Ku stránke môže predvolene pristupovať Správca, následne aj používateľ s oprávnením v ACL.
 
@@ -426,31 +398,29 @@ Formulár pre zmenu pridanie aukcie:
 		- predvolená hodnota
 		- zoznam možností
 
-Po uložení sa vygeneruje pozívací list a pošle sa notifikačný mail kontrolórom. V maile bude odkaz na stránku s textom pozívacieho listu, a zoznam súťažiacich, ktorým má byť odoslaný. Po odsúhlasení sa pozívací mail rozošle, ak to je verejná aukcia zverejní sa v RSS a tiež sa pošle notifikácia všetkým čo si vybrali, že chcú byť informovaní o danom type aukcie.
+Po uložení sa vygeneruje pozívací list a pošle sa [notifikačný mail](#mail-kontrolórom-o-pridaní-aukcie) kontrolórom.
 
-### Úprava aukcie
-
-Po pridaní aukcie do systému budú notifikačným mailom upozornený kontrolóri. V maily sa bude nachádzať odkaz na stránku s úpravou aukcie. 
+###Úprava aukcie
 
 V prípade úpravy už schválenej aukcie bude nutné zvoliť medzi možnosťami "Oprava preklepu" a "Zmena podmienok aukcie". Ak bude zvolená voľba "Oprava preklepu", tak sa zmenená aukcia uloží bez dodatočných akcií. 
 
-V prípade potvrdenia voľby "Zmena podmienok aukcie" pri úprave iným používateľom ako kontrolórom je aukcia deaktivovaná. O tomto sú následne informovaný súťažiaci aj kontrolóri mailom. Aukcia bude znovu aktivovaná až po odsúhlasení kontrolórom.
+V prípade potvrdenia voľby "Zmena podmienok aukcie" pri úprave iným používateľom ako kontrolórom je aukcia deaktivovaná. O tomto sú následne informovaný [súťažiaci](#mail-súťažiacim-o-zmene-pravidiel-aukcie) aj [kontrolóri mailom](#mail-kontrolórom-o-zmene-pravidiel-aukcie). Aukcia bude znovu aktivovaná až po odsúhlasení kontrolórom.
 
-Ak voľbu "Zmena podmienok aukcie" potvrdí kontrolór, budú súťažiaci informovaní iba o zmene podmienok – nie o zrušení a znovu spustení aukcie.
+Ak voľbu "Zmena podmienok aukcie" potvrdí kontrolór, budú [súťažiaci informovaní iba o zmene podmienok](#mail-súťažiacim-o-zmene-pravidiel-aukcie). Ak túto volbu potvrdí operátor, rozošlú sa [súťažiacim maily o pozastavení](#mail-súťažiacim-o-pozastavení-aukcie) a [kontrolórom so žiadosťou o schválenie](#mail-kontrolórom-o-zmene-pravidiel-aukcie). Túto aukciu bude musieť kontrolór znovu schváliť.
 
-### Schválenie novej aukcie
-
-K akcií bude mať prístup iba kontrolór.
-
-Kontrolór bude mať možnosť aukciu schváliť. Po tomto úkone sa rozošlú pozývacie listy pozvaným súťažiacim.
-
-### Schválenie priebehu aukcie
+###Schválenie aukcie
 
 K akcií bude mať prístup iba kontrolór.
 
-Po schválení je správca kontrolór presmerovaný na stránku "Zoznam ponúk" kde následne vyberie výhercu.
+Kontrolór bude mať možnosť aukciu schváliť. Po schválení sa [pozívací mail](#mail-súťažiacim-o-pridaní-aukcie) rozošle súťažiacim. Ak to je verejná aukcia zverejní sa v RSS a tiež sa pošle [mail](#mail-sledujúcim-o-pridaní-aukcie) všetkým čo si vybrali, že chcú byť informovaní o danom type aukcie.
 
-### Zoznam aukcií
+###Schválenie priebehu aukcie
+
+K akcií bude mať prístup iba kontrolór.
+
+Po schválení je správca kontrolór presmerovaný na stránku "Zoznam ponúk" kde následne vyberie výhercu. Po schválení priebehu aukcie a výbere výhercu sa výhercovi pošle [mail o výhre](#mail-súťažiacemu-o-výhre) a ostatným zúčastneným mail s poďakovaním za účasť.
+
+###Zoznam aukcií
 
 - Návštevník vidí:
 	- zoznam neukončených (aj nezačatých aukcií)
@@ -461,7 +431,7 @@ Po schválení je správca kontrolór presmerovaný na stránku "Zoznam ponúk" 
 - Operátor vidí: 
 	- Zoznam aukcií svojho prideleného typu, tlačidlo pridať aukciu, a pri jednotlivých aukciách upraviť aukciu. Zmazať aukciu ak ešte nebeží.
 
-### Detail aukcií
+###Detail aukcií
 
 Návštevník vidí túto stránku iba ak je aukcia verejná.
 
@@ -484,17 +454,17 @@ Súťažiaci vidí:
 
 Detail aukcie je možné exportovať do PDF.
 
-### Zmazanie aukcie
+###Zmazanie aukcie
 
 Zmazanie aukcie je možné iba povereným používateľom a iba v prípade ak aukcia aktuálne nebeží.
 
 O zmazaní už schválenej aukcie budú súťažiaci informovaný mailom.
 
-## Ponuky
+##Ponuky
 
-Po pridaní/úprave/zmazaní ponuky sa v prípade zmeny poradia súťažiacich rozošle mail informujúci o zmene poradia súťažiacim ktorých poradie sa zmenilo.
+Po pridaní/úprave/zmazaní ponuky sa v prípade zmeny poradia súťažiacich rozošle [mail informujúci o zmene](#mail-súťažiacim-o-zmene-ich-poradia-v-aukcií) poradia súťažiacim ktorých poradie sa zmenilo.
 
-### Pridanie ponuky
+###Pridanie ponuky
 
 Možné zadať iba ak aukcia práve prebieha.
 
@@ -510,23 +480,190 @@ Iba pre účty s oprávnením.
 
 Zoznam všetkých podaných ponúk. Po ukončení ponúk bude možné označiť konkrétnu ponuku ako víťaznú. Ukončiť výberové konanie bude možné aj bez výberu víťaza – aukcia bude ukončená bez víťaza.
 
-Ak bol zvolený víťaz, je mu automaticky zaslaný gratulačný mail.
+Ak bol zvolený víťaz, je mu automaticky zaslaný [gratulačný mail](#mail-súťažiacemu-o-výhre).
 
-Ostatným zúčastneným je odoslaný mail s poďakovaním za účasť.
+Ostatným zúčastneným je odoslaný [mail s poďakovaním za účasť](#mail-súťažiacemu-s-poďakovaním-za-účasť).
 
-### Zmazanie ponuky
+###Zmazanie ponuky
 
-Ponuku je možné zmazať iba počas behu aukcie.
+Iba pre účty s oprávnením. Preddefinovane bude mať oprávnenie operátor.
 
-### Detail ponuky
+Ponuku je možné zmazať iba počas behu aukcie. Po zmazaní sú súťažiaci informovaný [mailom](#mail-súťažiacim-o-zrušení-aukcie).
 
-Zobrazenie a možnosť generovania do PDF.
+###Detail ponuky
 
-# Prílohy
+V prípade verejnej aukcie prístupné každému. Ak je aukcia neverejná, je jej detail prístupný iba účom s oprávnením, operátorom, kontrolórom a pozvaným súťažiacim.
+
+Export do PDF.
+
+#Prílohy
+
+## Maily
+
+###Mail s aktiváciou účtu
+
+Mail je odoslaný po registrácií. Adresátom je maiová adresa práve registrovaného účtu.
+
+Predmet: **Váš účet bol vytvorený**
+
+>Vážený {MENO},
+>
+>bol Vám vytvorený účet. K účtu sa môžete prihlásiť použitím prihlasovacích údajov:
+>
+>Prihlasovacie meno: {MENO}
+>Heslo: {HESLO}.
+>
+>Pre aktiváciu účtu prosím kliknite na odkaz: {ODKAZ}
+>
+>Prípadne môžete zadať overovací kód {10 MIESTNY KÓD} na stránku {ODKAZ}.
+>
+>S pozdravom DRU, a. s.
+
+###Mail s novými prihlasovacími údajmi
+
+Predmet: **Nové prihlasovacie údaje**
+
+>Vážený {MENO},
+>
+>na žiadosť Vám boli zmenené prihlasovacie údaje k Vášmu účtu:
+>
+>Prihlasovacie meno: {MENO}
+>Heslo: {HESLO}.
+>
+>S pozdravom DRU, a. s.
+
+###Mail s novým heslom
+
+Predmet: **Nové heslo**
+
+>Vážený {MENO},
+>
+>na žiadosť Vám bolo k Vášmu účtu vygenerované nové heslo: {HESLO}
+>
+>V prípade, že Ste o nové heslo nežiadali, nič sa nedeje, stále môžete používať Vaše staré heslo.
+>
+>S pozdravom DRU, a. s.
+
+###Mail sledujúcim o pridaní aukcie
+
+Predmet: **Nová aukcia**
+
+>Dobrý deň,
+>
+>bola pridaná nová aukcia {NÁZOV AUKCIE S AKTÍVNYM ODKAZOM NA DETAIL AUKCIE}.
+>
+>S pozdravom DRU, a. s.
+
+###Mail súťažiacim o pridaní aukcie
+
+Predmet: **Nová aukcia**
+
+>Vážený {MENO},
+>
+>boli Ste pozvaný do novej aukcie {NÁZOV AUKCIE S AKTÍVNYM ODKAZOM NA DETAIL AUKCIE}.
+>
+>S pozdravom DRU, a. s.
+
+###Mail súťažiacim o zrušení aukcie
+
+Predmet: **Zrušenie aukcie**
+
+>Vážený {MENO},
+>
+>aukcia {NÁZOV AUKCIE} bola zrušená.
+>
+>S pozdravom DRU, a. s.
+
+###Mail súťažiacim o zmene ich poradia v aukcií
+
+Predmet: **Zmena Vášho poradia v aukcií**
+
+>Vážený {MENO},
+>
+>v aukcí {NÁZOV AUKCIE S AKTÍVNYM ODKAZOM NA DETAIL AUKCIE} v ktorej súťažíte sa zmenilo Vaše poradie z **{STARÉ ČÍSLO PORADIA}.** na **{NOVÉ ČÍSLO PORADIA}.**
+>
+>S pozdravom DRU, a. s.
+
+###Mail súťažiacim o zmene pravidiel aukcie
+
+Predmet: **Zmena pravidiel aukcie**
+
+>Vážený {MENO},
+>
+>upozorňujeme, že v aukcí {NÁZOV AUKCIE S AKTÍVNYM ODKAZOM NA DETAIL AUKCIE} boli zmenené pravidlá.
+>
+>S pozdravom DRU, a. s.
+
+###Mail súťažiacim o pozastavení aukcie
+
+Predmet: **Pozastavenie aukcie**
+
+>Vážený {MENO},
+>
+>aukcia {NÁZOV AUKCIE} bola pozastavená. O jej opätovnom sprístupnení Vás budeme informovať.
+>
+>S pozdravom DRU, a. s.
+
+###Mail súťažiacemu o výhre
+
+Predmet: **Vyhrali Ste**
+
+>Vážený {MENO},
+>
+>gratulujeme, vyhrali Ste v aukcií {NÁZOV AUKCIE S AKTÍVNYM ODKAZOM NA DETAIL AUKCIE}.
+>
+>Čoskoro Vás kontaktujeme.
+>
+>S pozdravom DRU, a. s.
+
+###Mail súťažiacemu s poďakovaním za účasť
+
+Predmet: **Vaša ponuka nebola vybraná**
+
+>Vážený {MENO},
+>
+>žiaľ, v aukcií {NÁZOV AUKCIE} sme si nevybrali Vašu ponuku.
+>
+>Ďakujeme za účasť a dúfame, že sa zúčastníte aj budúcej aukcie.
+>
+>S pozdravom DRU, a. s.
+
+###Mail kontrolórom o pridaní aukcie
+
+Predmet: **Nová aukcia**
+
+>Vážený {MENO},
+>
+>bola pridaná nová aukcia {NÁZOV AUKCIE S AKTÍVNYM ODKAZOM NA DETAIL AUKCIE}. Aukcia čaká na schválenie.
+>
+>Do aukcie boli pozvaný nasledovný súťažiaci:
+>{ZOZNAM SÚŤAŽIACICH}
+>
+>S pozdravom DRU, a. s.
+
+###Mail kontrolórom o zmene pravidiel aukcie
+
+Predmet: **Zmena pravidiel**
+
+>Vážený {MENO},
+>
+>v aukcí {NÁZOV AUKCIE S AKTÍVNYM ODKAZOM NA DETAIL AUKCIE} boli zmenené pravidlá. Aukcia čaká na schválenie.
+>
+>S pozdravom DRU, a. s.
+
+###Mail kontrolórom o skončení aukcie
+
+Predmet: **Ukončenie aukcie**
+
+>Vážený {MENO},
+>
+>aukcia {NÁZOV AUKCIE S AKTÍVNYM ODKAZOM NA DETAIL AUKCIE} bola ukončená. Aukcia čaká na schválenie výsledkov a výber víťaza.
+>
+>S pozdravom DRU, a. s.
 
 ## Návod na prevod detailného návrhu do PDF
 
-### Inštalácia prostredia
+###Inštalácia prostredia
 	
 	$ sudo apt-get install dvipdfmx haskell-platform nbibtex texlive-latex-base
 	texlive-latex-recommended texlive-latex-extra preview-latex-style dvipng 
@@ -536,7 +673,7 @@ Zobrazenie a možnosť generovania do PDF.
 
 	$ cabal install pandoc
 
-### Prevod do PDF
+###Prevod do PDF
 
 	$ ~/.cabal/bin/pandoc -N --template=template.tex --variable mainfont=Georgia 
 	--variable sansfont=Arial --variable monofont="DejaVu Sans Mono" 
