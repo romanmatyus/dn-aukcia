@@ -451,8 +451,8 @@ Operátor okrem toho vidí:
 
 Súťažiaci vidí:
 
-	- Svoje aktuálne poradie v aukcií
-	- Ak aukcia prebieha Tlačidlo Pridať/Upraviť ponuku
+- Svoje aktuálne poradie v aukcií
+- Ak aukcia prebieha Tlačidlo Pridať/Upraviť ponuku
 
 Detail aukcie je možné exportovať do PDF.
 
