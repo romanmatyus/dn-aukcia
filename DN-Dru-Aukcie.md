@@ -689,3 +689,7 @@ Predmet: **Ukončenie aukcie**
 	--variable sansfont=Arial --variable monofont="DejaVu Sans Mono" 
 	--variable fontsize=12pt --variable lang=slovak DN-Dru-Aukcie.md
 	--latex-engine=xelatex --toc -o DN-Dru-Aukcie.pdf
+
+##Pozývací list
+
+Šablóna pozývacieho listu sa nachádza v súbore pozyvaci-list.pdt.
