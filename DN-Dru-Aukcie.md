@@ -371,6 +371,9 @@ Formulár pre pridanie aukcie:
 	- s kontrolou na celočíselný vstup
 - Textové pole so zoznamom súťažiacich
 - Zaškrtávacie pole "Súkromná aukcia"
+- Zaškrtávacie pole "Zobraziť súťažiacemu jeho poradie"
+- Zaškrtávacie pole "Zobraziť súťažiacemu najnižšiu ponuku"
+- Zaškrtávacie pole "Zobraziť súťažiacemu počet súťažiacich"
 - Výberové pole "Kontrolór aukcie"
 	- bude obsahovať zoznam používateľov
 - Vloženie parametrov ponúk:
