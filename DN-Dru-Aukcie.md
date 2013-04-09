@@ -317,7 +317,7 @@ Obsahom bude tabuľka (GRID) obsahujúca zoznam oprávnení pre konkrétnu entit
 
 Vstupy budú ošetrené tak, aby nebolo možné definovať pre jednu entitu viac ako jedno oprávnenie toho istého typu.
 
-###Kategorizácia
+##Kategorizácia
 
 Kategorizácia bude nerekurzná - bez zanorenia kategórií.
 
