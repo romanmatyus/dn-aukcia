@@ -692,4 +692,4 @@ Predmet: **Ukončenie aukcie**
 
 ##Pozývací list
 
-Šablóna pozývacieho listu sa nachádza v súbore pozyvaci-list.pdt.
+Šablóna pozývacieho listu sa nachádza v súbore pozyvaci-list.odt.
