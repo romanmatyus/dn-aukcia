@@ -379,27 +379,28 @@ Formulár pre pridanie aukcie:
 - Vloženie parametrov ponúk:
 	- Textové pole
 		- názov
-		- kontrola vyplnenosti
 		- predvolená hodnota
 		- placeholder
-	- Textové pole pre čísla
+		- pomocník
+		- validácia
+			- povinná položka
+	- Textové pole - číslo
 		- názov
-		- kontrola vyplnenosti
-		- rozmedzie
+		- minimum
+		- maximum
+		- krok
 		- predvolená hodnota
 		- placeholder
-	- Zaškrtávacie tlačidlo
+		- pomocník
+		- validácia
+			- povinná položka
+	- Zaškrtávacie/prepínacie tlačidlo a výberový zoznam
 		- názov
 		- predvolená hodnota
+		- pomocník
 		- zoznam možností
-	- Prepínacie tlačidlo
-		- názov
-		- predvolená hodnota
-		- zoznam možností
-	- Výberový zoznam
-		- názov
-		- predvolená hodnota
-		- zoznam možností
+		- validácia
+			- povinná položka
 
 Po uložení sa vygeneruje pozívací list a pošle sa [notifikačný mail](#mail-kontrolórom-o-pridaní-aukcie) kontrolórom.
 
