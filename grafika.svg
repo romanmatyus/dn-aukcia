@@ -415,10 +415,10 @@
      inkscape:pageopacity="1"
      inkscape:pageshadow="2"
      inkscape:zoom="0.5"
-     inkscape:cx="449.32183"
-     inkscape:cy="346.07186"
+     inkscape:cx="628.52922"
+     inkscape:cy="183.45368"
      inkscape:document-units="px"
-     inkscape:current-layer="g4347"
+     inkscape:current-layer="g3440"
      showgrid="false"
      inkscape:window-width="1366"
      inkscape:window-height="716"
@@ -2068,6 +2068,117 @@
   </g>
   <g
      inkscape:groupmode="layer"
+     id="g3474"
+     inkscape:label="detail aukcie - neschvalena"
+     style="display:none"
+     sodipodi:insensitive="true">
+    <text
+       sodipodi:linespacing="125%"
+       id="text3492"
+       y="170.74434"
+       x="845.9483"
+       style="font-size:40px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#ff6400;fill-opacity:1;stroke:none;font-family:Sans"
+       xml:space="preserve"><tspan
+         style="font-size:16px;fill:#ff6400;fill-opacity:1"
+         y="170.74434"
+         x="845.9483"
+         id="tspan3494"
+         sodipodi:role="line">vymazať aukciu</tspan></text>
+    <g
+       id="g4323"
+       transform="matrix(1.6324386,0,0,1.6324386,78.35694,-248.28862)"
+       style="fill:#ff6400;fill-opacity:1">
+      <path
+         sodipodi:nodetypes="cc"
+         inkscape:connector-curvature="0"
+         id="path3498"
+         d="m 464.39303,249.19114 -9.64945,8.23384"
+         style="fill:#ff6400;fill-opacity:1;stroke:#ff6400;stroke-width:3;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none" />
+      <path
+         style="fill:#ff6400;fill-opacity:1;stroke:#ff6400;stroke-width:3;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+         d="m 464.31555,257.51409 -9.49449,-8.41206"
+         id="path3500"
+         inkscape:connector-curvature="0"
+         sodipodi:nodetypes="cc" />
+    </g>
+    <text
+       xml:space="preserve"
+       style="font-size:40px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#ff6603;fill-opacity:1;stroke:none;display:inline;font-family:Sans"
+       x="845.20795"
+       y="143.16554"
+       id="text3480"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan3482"
+         x="845.20795"
+         y="143.16554"
+         style="font-size:16px;fill:#ff6603;fill-opacity:1">schváliť aukciu</tspan></text>
+    <g
+       transform="matrix(1.3412616,0,0,1.3412616,444.4458,-203.32143)"
+       style="fill:#ff6603;fill-opacity:1;display:inline"
+       id="g4287">
+      <path
+         inkscape:connector-curvature="0"
+         id="path3486"
+         d="m 280.88877,253.375 4.5625,4.75"
+         style="fill:#ff6603;fill-opacity:1;stroke:#ff6400;stroke-width:3;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+         sodipodi:nodetypes="cc" />
+      <path
+         style="fill:#ff6603;fill-opacity:1;stroke:#ff6400;stroke-width:3;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+         d="m 292.39303,249.19114 -6.82102,9.11772"
+         id="path3488"
+         inkscape:connector-curvature="0"
+         sodipodi:nodetypes="cc" />
+    </g>
+    <path
+       sodipodi:type="arc"
+       style="fill:#ff6400;fill-opacity:1;stroke:none"
+       id="path4697"
+       sodipodi:cx="821.75"
+       sodipodi:cy="99.875"
+       sodipodi:rx="3.25"
+       sodipodi:ry="3.125"
+       d="m 825,99.875 a 3.25,3.125 0 1 1 -6.5,0 3.25,3.125 0 1 1 6.5,0 z"
+       transform="matrix(1.4230769,0,0,1.4230769,-347.53846,-42.182692)" />
+    <path
+       transform="matrix(1.1730769,0,0,1.1730769,-129.28846,-4.5576919)"
+       d="m 825,99.875 a 3.25,3.125 0 1 1 -6.5,0 3.25,3.125 0 1 1 6.5,0 z"
+       sodipodi:ry="3.125"
+       sodipodi:rx="3.25"
+       sodipodi:cy="99.875"
+       sodipodi:cx="821.75"
+       id="path4699"
+       style="fill:#ff6400;fill-opacity:1;stroke:none"
+       sodipodi:type="arc" />
+    <g
+       id="g4705"
+       style="stroke:#ff6400;stroke-opacity:1">
+      <path
+         inkscape:connector-curvature="0"
+         id="path4701"
+         d="m 827.5,100.875 c 7.125,0 6.75,6.875 6.75,6.875"
+         style="fill:none;stroke:#ff6400;stroke-width:2;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none" />
+      <path
+         inkscape:connector-curvature="0"
+         id="path4703"
+         d="m 829.625,105.25 4.75,2.5 2.875,-4.125"
+         style="fill:none;stroke:#ff6400;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none" />
+    </g>
+    <text
+       sodipodi:linespacing="125%"
+       id="text4709"
+       y="113.16554"
+       x="845.20795"
+       style="font-size:40px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#ff6603;fill-opacity:1;stroke:none;display:inline;font-family:Sans"
+       xml:space="preserve"><tspan
+         style="font-size:16px;fill:#ff6603;fill-opacity:1"
+         y="113.16554"
+         x="845.20795"
+         id="tspan4711"
+         sodipodi:role="line">duplikovať</tspan></text>
+  </g>
+  <g
+     inkscape:groupmode="layer"
      id="g3440"
      inkscape:label="detail aukcie"
      style="display:none"
@@ -2134,10 +2245,10 @@
        id="rect3472"
        style="fill:url(#linearGradient6836);fill-opacity:1;stroke:none;display:inline" />
     <rect
-       style="fill:#ffefd0;fill-opacity:1;stroke:#ffbd1a;stroke-opacity:1"
+       style="fill:none;stroke:#ffbd1a;stroke-opacity:1"
        id="rect3502"
        width="170.1026"
-       height="87.190903"
+       height="116.4409"
        x="810.36163"
        y="65.427269"
        rx="5"
@@ -2172,12 +2283,19 @@
        d="m 810.14195,120.29733 170.32226,0"
        style="fill:none;stroke:#ffcb4d;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:4, 1;stroke-dashoffset:0"
        sodipodi:nodetypes="cc" />
+    <path
+       sodipodi:nodetypes="cc"
+       style="fill:none;stroke:#ffcb4d;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:4, 1;stroke-dashoffset:0"
+       d="m 810.14195,150.29733 170.32226,0"
+       id="path4713"
+       inkscape:connector-curvature="0" />
   </g>
   <g
      style="display:inline"
      inkscape:label="pridať aukciu"
      id="g4347"
-     inkscape:groupmode="layer">
+     inkscape:groupmode="layer"
+     sodipodi:insensitive="true">
     <text
        sodipodi:linespacing="125%"
        id="text4349"
@@ -2363,7 +2481,7 @@
        rx="3"
        ry="3" />
     <path
-       style="fill:#dd9300;stroke:#dd9300;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;fill-opacity:1"
+       style="fill:#dd9300;fill-opacity:1;stroke:#dd9300;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
        d="m 349.6643,314.32886 0,22.45064"
        id="path4571"
        inkscape:connector-curvature="0" />
@@ -2549,71 +2667,6 @@
          id="path4695"
          d="M 457.3125,422.0625 450.125,429.25"
          style="fill:none;stroke:#dd9300;stroke-width:1px;stroke-linecap:round;stroke-linejoin:miter;stroke-opacity:1" />
-    </g>
-  </g>
-  <g
-     inkscape:groupmode="layer"
-     id="g3474"
-     inkscape:label="detail aukcie - neschvalena"
-     style="display:none"
-     sodipodi:insensitive="true">
-    <text
-       sodipodi:linespacing="125%"
-       id="text3492"
-       y="140.74434"
-       x="845.9483"
-       style="font-size:40px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#ff6400;fill-opacity:1;stroke:none;font-family:Sans"
-       xml:space="preserve"><tspan
-         style="font-size:16px;fill:#ff6400;fill-opacity:1"
-         y="140.74434"
-         x="845.9483"
-         id="tspan3494"
-         sodipodi:role="line">vymazať aukciu</tspan></text>
-    <g
-       id="g4323"
-       transform="matrix(1.6324386,0,0,1.6324386,78.35694,-278.28862)"
-       style="fill:#ff6400;fill-opacity:1">
-      <path
-         sodipodi:nodetypes="cc"
-         inkscape:connector-curvature="0"
-         id="path3498"
-         d="m 464.39303,249.19114 -9.64945,8.23384"
-         style="fill:#ff6400;fill-opacity:1;stroke:#ff6400;stroke-width:3;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none" />
-      <path
-         style="fill:#ff6400;fill-opacity:1;stroke:#ff6400;stroke-width:3;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
-         d="m 464.31555,257.51409 -9.49449,-8.41206"
-         id="path3500"
-         inkscape:connector-curvature="0"
-         sodipodi:nodetypes="cc" />
-    </g>
-    <text
-       xml:space="preserve"
-       style="font-size:40px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#ff6603;fill-opacity:1;stroke:none;display:inline;font-family:Sans"
-       x="845.20795"
-       y="113.16554"
-       id="text3480"
-       sodipodi:linespacing="125%"><tspan
-         sodipodi:role="line"
-         id="tspan3482"
-         x="845.20795"
-         y="113.16554"
-         style="font-size:16px;fill:#ff6603;fill-opacity:1">schváliť aukciu</tspan></text>
-    <g
-       transform="matrix(1.3412616,0,0,1.3412616,444.4458,-233.32143)"
-       style="fill:#ff6603;fill-opacity:1;display:inline"
-       id="g4287">
-      <path
-         inkscape:connector-curvature="0"
-         id="path3486"
-         d="m 280.88877,253.375 4.5625,4.75"
-         style="fill:#ff6603;fill-opacity:1;stroke:#ff6400;stroke-width:3;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
-         sodipodi:nodetypes="cc" />
-      <path
-         style="fill:#ff6603;fill-opacity:1;stroke:#ff6400;stroke-width:3;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
-         d="m 292.39303,249.19114 -6.82102,9.11772"
-         id="path3488"
-         inkscape:connector-curvature="0"
-         sodipodi:nodetypes="cc" />
     </g>
   </g>
   <g
