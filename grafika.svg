@@ -415,10 +415,10 @@
      inkscape:pageopacity="1"
      inkscape:pageshadow="2"
      inkscape:zoom="0.5"
-     inkscape:cx="628.52922"
-     inkscape:cy="183.45368"
+     inkscape:cx="434.94851"
+     inkscape:cy="399.04769"
      inkscape:document-units="px"
-     inkscape:current-layer="g3440"
+     inkscape:current-layer="g4347"
      showgrid="false"
      inkscape:window-width="1366"
      inkscape:window-height="716"
@@ -1970,7 +1970,7 @@
            id="tspan5613"
            sodipodi:role="line">pridať ponuku</tspan></text>
       <path
-         d="m 290.26734,307.1694 a 9.8111067,9.8111067 0 1 1 -19.62221,0 9.8111067,9.8111067 0 1 1 19.62221,0 z"
+         d="m 290.26734,307.1694 c 0,5.41853 -4.39258,9.81111 -9.8111,9.81111 -5.41853,0 -9.81111,-4.39258 -9.81111,-9.81111 0,-5.41852 4.39258,-9.8111 9.81111,-9.8111 5.41852,0 9.8111,4.39258 9.8111,9.8111 z"
          sodipodi:ry="9.8111067"
          sodipodi:rx="9.8111067"
          sodipodi:cy="307.1694"
@@ -2336,7 +2336,12 @@
          x="267.15411"
          y="143.48239"
          id="tspan5970-0"
-         style="line-height:200%">Hlavná požiadavka:</tspan></text>
+         style="line-height:200%">Hlavná požiadavka:</tspan><tspan
+         sodipodi:role="line"
+         x="267.15411"
+         y="167.48239"
+         style="line-height:200%"
+         id="tspan3507">Ostatné požiadavky:</tspan></text>
     <rect
        style="fill:#ffefd0;fill-opacity:1;stroke:#dd9300;stroke-width:1;stroke-linecap:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
        id="rect5974-5"
@@ -2359,22 +2364,22 @@
        style="fill:#ffefd0;fill-opacity:1;stroke:#dd9300;stroke-width:1;stroke-linecap:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
        id="rect5978-5"
        width="513.70447"
-       height="136.90277"
+       height="112.15401"
        x="419.88916"
-       y="127.92602"
+       y="152.67476"
        rx="3"
        ry="3" />
     <text
        xml:space="preserve"
        style="font-size:12px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#f6d89c;fill-opacity:1;stroke:none;font-family:Sans"
        x="438.40619"
-       y="211.09126"
+       y="225.09126"
        id="text4455"
        sodipodi:linespacing="125%"><tspan
          sodipodi:role="line"
          id="tspan4457"
          x="438.40619"
-         y="211.09126"
+         y="225.09126"
          style="font-size:64px;fill:#f6d89c;fill-opacity:1">wysiwyg editor</tspan></text>
     <text
        xml:space="preserve"
@@ -2668,6 +2673,15 @@
          d="M 457.3125,422.0625 450.125,429.25"
          style="fill:none;stroke:#dd9300;stroke-width:1px;stroke-linecap:round;stroke-linejoin:miter;stroke-opacity:1" />
     </g>
+    <rect
+       style="fill:#ffefd0;fill-opacity:1;stroke:#dd9300;stroke-width:1;stroke-linecap:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+       id="rect3505"
+       width="197.28279"
+       height="21.920311"
+       x="419.88916"
+       y="127.92603"
+       rx="3"
+       ry="3" />
   </g>
   <g
      inkscape:groupmode="layer"

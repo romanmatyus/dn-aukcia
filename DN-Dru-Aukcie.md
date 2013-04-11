@@ -357,7 +357,8 @@ Formulár pre pridanie aukcie:
 	- s kontrolou na vyplnenie: "Zadajte prosím Názov aukcie."
 - Textové pole "Súťaží sa o"
 - Textové pole "Hlavná požiadavka"
-- Textové pole "Ostatné požiadavky"
+- Textarea "Ostatné požiadavky"
+	- wysiwyg editor
 - Textové pole "Termín vyhodnotenia aukcie"
 - Textové pole "Platnosť aukcie od:"
 	- s kontrolou na vyplnenie: "Zadajte prosím od kedy je aukcia platná."
