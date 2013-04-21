@@ -5,7 +5,7 @@
 
 Cieľom projektu je zabezpečiť firme DRU, a. s. (ďalej objednávateľ) webovú aplikáciu na vyhlasovanie reverzných aukcií a jej dodávateľom možnosť aukcie sa zúčastniť.
 
-Podmienkou dodania je licencovanie produktu pod otvorenou licenciou BSD. Zdrojový kód musí byť jasne štrukturovaný a komentovaný.
+Podmienkou dodania je licencovanie produktu pod otvorenou licenciou BSD. Zdrojový kód musí byť jasne štruktúrovaný a komentovaný.
 
 #Charakteristika dokumentu
 
@@ -17,7 +17,7 @@ V texte sa nachádzajú slová v zložených zátvorkách, ktoré budú vo výsl
 
 Dokument slúži ako záväzný podklad pre vypracovanie aplikácie. Akékoľvek zmeny funkčnosti vykonané vykonávateľom musia byť vopred odsúhlasené objednávateľom. Zmeny by mali mať iba účel zjednodušenia implementácie alebo zvýšenia komfortu používania aplikácie.
 
-Zmeny navrhnuté objednávateľom po odsúhlasení tohoto dokumentu budú spoplatnené zvlášť, resp. doplatkom.
+Zmeny navrhnuté objednávateľom po odsúhlasení tohto dokumentu budú spoplatnené zvlášť, resp. doplatkom.
 
 Funkcionalita systému bude pred odovzdaním riadne preverená dodávateľom. Po odovzdaní predmetného diela je objednávateľ povinný skontrolovať dodané dielo a nahlásiť nezrovnalosti oproti detailnému návrhu. Tieto budú opravené na náklady dodávateľa. 
 
@@ -108,7 +108,7 @@ Registračný formulár:
 	- s kontrolou na vyplnenie: "Zadajte prosím IČO."
 	- s kontrolou číselného typu: "IČO musí obsahovať iba čísla."
 	- s kontrolou na počet znakov: "IČO musí byť 6 až 8 miestne číslo."
-- Odosielacie tlačidlo "Načítať údaje podla IČO"
+- Odosielacie tlačidlo "Načítať údaje podľa IČO"
 	- po kliknutí sa načítajú údaje do formulára z [orsr.sk](http://orsr.sk)/[zrsr.sk](http://www.zrsr.sk)
 - Textové pole "Obchodné meno"
 	- s kontrolou na vyplnenie: "Zadajte prosím Obchodné meno."
@@ -132,7 +132,7 @@ Registračný formulár:
 	  Číslo môže byť vo formáte 0907 123 456 (10 čísiel) alebo +421 907 123 456 (+ a 12 čísiel)
 	- s medzerami aj bez nich
 - Viacriadkové textové pole "Referencie"
-- Certifikáty a osvedčenia (polia na upload skenovaných osvedčení) -ak sa dá tak neobmedzený počet ak nie tak asi 4 polia
+- Certifikáty a osvedčenia (polia na nahratie skenovaných osvedčení) -ak sa dá tak neobmedzený počet ak nie tak asi 4 polia
 - Textové pole "Prihlasovacie meno"
 	- s kontrolou na vyplnenie: "Zadajte prosím Prihlasovacie meno."
 	- s kontrolou na počet znakov: "Prihlasovacie meno musí mať minimálne 5 znakov."
@@ -221,7 +221,7 @@ Podnadpis "Zmena prihlasovacieho mena".
 - Textové pole "Heslo"
 	- s kontrolou na vyplnenie: "Zadajte prosím heslo."
 	- s kontrolou na správnosť hesla: "Heslo nie je správne."
-- Odosielacie tlačidlo "Zmeniť prihlasovacie m"no.
+- Odosielacie tlačidlo "Zmeniť prihlasovacie meno".
 
 **Formulár pre zmenu hesla:**
 
@@ -298,10 +298,10 @@ Ku stránke môže pristupovať Správca.
 
 Nadpis "Úprava práv skupiny {Názov skupiny}".
 
-Obsahom bude Komponenta pre úpravu ACL pravidiel skupiny pre konkrétnu skupinu.
+Obsahom bude Komponent pre úpravu ACL pravidiel skupiny pre konkrétnu skupinu.
 
-Komponenta pre úpravu ACL pravidiel skupiny/používateľa
-Komponenta bude slúžiť na správu oprávnení.
+Komponent pre úpravu ACL pravidiel skupiny/používateľa
+Komponent bude slúžiť na správu oprávnení.
 
 Obsahom bude tabuľka (GRID) obsahujúca zoznam oprávnení pre konkrétnu entitu so stĺpcami:
 
@@ -366,10 +366,10 @@ Formulár pre pridanie aukcie:
 - Textové pole "Termín vyhodnotenia aukcie"
 - Textové pole "Platnosť aukcie od:"
 	- s kontrolou na vyplnenie: "Zadajte prosím od kedy je aukcia platná."
-	- pole bude obsahovať komponentu na výber dátumu a času
+	- pole bude obsahovať komponent na výber dátumu a času
 - Textové pole "Platnosť aukcie do:"
 	- s kontrolou na vyplnenie: "Zadajte prosím do kedy je aukcia platná."
-	- pole bude obsahovať komponentu na výber dátumu a času
+	- pole bude obsahovať komponent na výber dátumu a času
 - Textové pole "Maximálna cena:"
 	- s kontrolou na číselný vstup (na dve desatinné čísla)
 - Textové pole "Garancia ceny (v dňoch)"
@@ -409,7 +409,7 @@ Formulár pre pridanie aukcie:
 		- validácia
 			- povinná položka
 
-Po uložení sa vygeneruje pozívací list a pošle sa [notifikačný mail](#mail-kontrolórom-o-pridaní-aukcie) kontrolórom.
+Po uložení sa vygeneruje pozývací list a pošle sa [notifikačný mail](#mail-kontrolórom-o-pridaní-aukcie) kontrolórom.
 
 ###Úprava aukcie
 
@@ -417,19 +417,19 @@ V prípade úpravy už schválenej aukcie bude nutné zvoliť medzi možnosťami
 
 V prípade potvrdenia voľby "Zmena podmienok aukcie" pri úprave iným používateľom ako kontrolórom je aukcia deaktivovaná. O tomto sú následne informovaný [súťažiaci](#mail-súťažiacim-o-zmene-pravidiel-aukcie) aj [kontrolóri mailom](#mail-kontrolórom-o-zmene-pravidiel-aukcie). Aukcia bude znovu aktivovaná až po odsúhlasení kontrolórom.
 
-Ak voľbu "Zmena podmienok aukcie" potvrdí kontrolór, budú [súťažiaci informovaní iba o zmene podmienok](#mail-súťažiacim-o-zmene-pravidiel-aukcie). Ak túto volbu potvrdí operátor, rozošlú sa [súťažiacim maily o pozastavení](#mail-súťažiacim-o-pozastavení-aukcie) a [kontrolórom so žiadosťou o schválenie](#mail-kontrolórom-o-zmene-pravidiel-aukcie). Túto aukciu bude musieť kontrolór znovu schváliť.
+Ak voľbu "Zmena podmienok aukcie" potvrdí kontrolór, budú [súťažiaci informovaní iba o zmene podmienok](#mail-súťažiacim-o-zmene-pravidiel-aukcie). Ak túto voľbu potvrdí operátor, rozošlú sa [súťažiacim maily o pozastavení](#mail-súťažiacim-o-pozastavení-aukcie) a [kontrolórom so žiadosťou o schválenie](#mail-kontrolórom-o-zmene-pravidiel-aukcie). Túto aukciu bude musieť kontrolór znovu schváliť.
 
 ###Schválenie aukcie
 
 K akcií bude mať prístup iba kontrolór.
 
-Kontrolór bude mať možnosť aukciu schváliť. Po schválení sa [pozívací mail](#mail-súťažiacim-o-pridaní-aukcie) rozošle súťažiacim. Ak to je verejná aukcia zverejní sa v RSS a tiež sa pošle [mail](#mail-sledujúcim-o-pridaní-aukcie) všetkým čo si vybrali, že chcú byť informovaní o danom type aukcie.
+Kontrolór bude mať možnosť aukciu schváliť. Po schválení sa [pozývací mail](#mail-súťažiacim-o-pridaní-aukcie) rozošle súťažiacim. Ak to je verejná aukcia zverejní sa v RSS a tiež sa pošle [mail](#mail-sledujúcim-o-pridaní-aukcie) všetkým čo si vybrali, že chcú byť informovaní o danom type aukcie.
 
 ###Schválenie priebehu aukcie
 
 K akcií bude mať prístup iba kontrolór.
 
-Po schválení je správca kontrolór presmerovaný na stránku "Zoznam ponúk" kde následne vyberie výhercu. V tomto kroku môže rozkliknúť "Upraviť formát mailov" a upraviť mail odoslaný víťazovy a ostatným súťažiacim. Ak bol zvolený víťaz, je mu automaticky zaslaný [gratulačný mail](#mail-súťažiacemu-o-výhre). Ostatným zúčastneným je odoslaný [mail s poďakovaním za účasť](#mail-súťažiacemu-s-poďakovaním-za-účasť).
+Po schválení je správca kontrolór presmerovaný na stránku "Zoznam ponúk" kde následne vyberie výhercu. V tomto kroku môže rozkliknúť "Upraviť formát mailov" a upraviť mail odoslaný víťazovi a ostatným súťažiacim. Ak bol zvolený víťaz, je mu automaticky zaslaný [gratulačný mail](#mail-súťažiacemu-o-výhre). Ostatným zúčastneným je odoslaný [mail s poďakovaním za účasť](#mail-súťažiacemu-s-poďakovaním-za-účasť).
 
 Pri výbere víťaza aukcie je možné vyplniť dôvod výberu. Dôležité je to hlavne pri výbere súťažiaceho ktorý nepodal ponuku s najnižšou cenou.
 
@@ -505,7 +505,7 @@ Ponuku je možné zmazať iba počas behu aukcie. Po zmazaní sú súťažiaci i
 
 ###Detail ponuky
 
-V prípade verejnej aukcie prístupné každému. Ak je aukcia neverejná, je jej detail prístupný iba účom s oprávnením, operátorom, kontrolórom a pozvaným súťažiacim.
+V prípade verejnej aukcie prístupné každému. Ak je aukcia neverejná, je jej detail prístupný iba účtom s oprávnením, operátorom, kontrolórom a pozvaným súťažiacim.
 
 Export do PDF.
 
@@ -515,7 +515,7 @@ Export do PDF.
 
 ###Mail s aktiváciou účtu
 
-Mail je odoslaný po registrácií. Adresátom je maiová adresa práve registrovaného účtu.
+Mail je odoslaný po registrácií. Adresátom je mailová adresa práve registrovaného účtu.
 
 Predmet: **Váš účet bol vytvorený**
 
@@ -593,7 +593,7 @@ Predmet: **Zmena Vášho poradia v aukcií**
 
 >Vážený {MENO},
 >
->v aukcí {NÁZOV AUKCIE S AKTÍVNYM ODKAZOM NA DETAIL AUKCIE} v ktorej súťažíte sa zmenilo Vaše poradie z **{STARÉ ČÍSLO PORADIA}.** na **{NOVÉ ČÍSLO PORADIA}.**
+>v aukcií {NÁZOV AUKCIE S AKTÍVNYM ODKAZOM NA DETAIL AUKCIE} v ktorej súťažíte sa zmenilo Vaše poradie z **{STARÉ ČÍSLO PORADIA}.** na **{NOVÉ ČÍSLO PORADIA}.**
 >
 >S pozdravom DRU, a. s.
 
@@ -603,7 +603,7 @@ Predmet: **Zmena pravidiel aukcie**
 
 >Vážený {MENO},
 >
->upozorňujeme, že v aukcí {NÁZOV AUKCIE S AKTÍVNYM ODKAZOM NA DETAIL AUKCIE} boli zmenené pravidlá.
+>upozorňujeme, že v aukcií {NÁZOV AUKCIE S AKTÍVNYM ODKAZOM NA DETAIL AUKCIE} boli zmenené pravidlá.
 >
 >S pozdravom DRU, a. s.
 
@@ -670,7 +670,7 @@ Predmet: **Zmena pravidiel**
 
 >Vážený {MENO},
 >
->v aukcí {NÁZOV AUKCIE S AKTÍVNYM ODKAZOM NA DETAIL AUKCIE} boli zmenené pravidlá. Aukcia čaká na schválenie.
+>v aukcií {NÁZOV AUKCIE S AKTÍVNYM ODKAZOM NA DETAIL AUKCIE} boli zmenené pravidlá. Aukcia čaká na schválenie.
 >
 >S pozdravom DRU, a. s.
 
@@ -719,9 +719,9 @@ Ceny sú udávané bez DPH.
 
 Autor sa zaväzuje podrobiť produkt testovaniu a dodať ho v najvyššej možnej kvalite.
 
-Klient je v prípade odhalenia chýb (nekorektného správania oproti detailnému návrhu) povinný chybu autorovy nahlásiť. Autor sa zaväzuje chyby bezplatne odstrániť v najkratšom možnom čase.
+Klient je v prípade odhalenia chýb (nekorektného správania oproti detailnému návrhu) povinný chybu autorovi nahlásiť. Autor sa zaväzuje chyby bezplatne odstrániť v najkratšom možnom čase.
 
-Táto záruka je platná dva roky od záverečného odovzdania produktu do používania klientovy.
+Táto záruka je platná dva roky od záverečného odovzdania produktu do používania klientovi.
 
 Autor nenesie zodpovednosť za škodu spôsobenú dielom.
 
@@ -733,7 +733,7 @@ Autor nenesie zodpovednosť za škodu spôsobenú dielom.
 
 Cena: **160 €/bez DPH**
 
-Cieľom je verne zachytiť požiadavky klienta a zozumiteľne ich spísať do dokumentu. Výsledný dokument musí obsahovať popis všetkých funkcionalít ktoré zákazník od navrhovaného systému očakáva. Výsledný dokument je záväzný, preto je nutné aby bol vypracovaný pochopiteľne a jednoznačne. V prípade pochybností o správnosti prípadne neobsiahnutí všetkých požadovaných funkcií je povinnosťou zákazníka chybu nahlásiť a schváliť až dokument ktorý je plne korektný.
+Cieľom je verne zachytiť požiadavky klienta a zrozumiteľne ich spísať do dokumentu. Výsledný dokument musí obsahovať popis všetkých funkcionalít ktoré zákazník od navrhovaného systému očakáva. Výsledný dokument je záväzný, preto je nutné aby bol vypracovaný pochopiteľne a jednoznačne. V prípade pochybností o správnosti prípadne neobsiahnutí všetkých požadovaných funkcií je povinnosťou zákazníka chybu nahlásiť a schváliť až dokument ktorý je plne korektný.
 
 ###Základné používateľské funkcie
 
