@@ -36,6 +36,10 @@ Schémy popisovaného riešenia sú v prílohách:
 
 Aplikácia nebude disponovať možnosťou zmeny lokalizácie. Všetky zobrazované texty budú iba v slovenskom jazyku. Aplikácia môže obsahovať predprípravu pre budúcu lokalizáciu.
 
+##Prístupnosť
+
+Webové rozhranie bude prispôsobené verziám prehliadačov, ktoré nie sú staršie ako dva roky. Rozhranie bude spĺňať platné štandardy v dobe práce na produkte a bude pracovať s aktuálnymi knižnicami tretích strán. Jednotlivé prvky rozhrania budú v maximálnej možnej miere optimalizované pre čo najširšie spektrum zariadení.
+
 ##Prístupové práva
 
 Systém bude obsahovať detailné možnosti nastavenia prístupových práv. Preddefinovane bude obsahovať skupiny používateľov, ktoré budú môcť byť v systéme detailne nastavené, prípadne doplnené alebo odstránené. Práva budú môcť byť špecifické aj na úrovni jednotlivých používateľov.
@@ -375,7 +379,9 @@ Formulár pre pridanie aukcie:
 - Zaškrtávacie pole "Zobraziť súťažiacemu jeho poradie"
 - Zaškrtávacie pole "Zobraziť súťažiacemu najnižšiu ponuku"
 - Zaškrtávacie pole "Zobraziť súťažiacemu počet súťažiacich"
-- Výberové pole "Kontrolór aukcie"
+- Výberové pole "Kontrolór schvalujúci spustenie aukcie"
+	- bude obsahovať zoznam používateľov
+- Výberové pole "Kontrolór schvalujúci víťaza aukcie"
 	- bude obsahovať zoznam používateľov
 - Vloženie parametrov ponúk:
 	- Textové pole
@@ -423,7 +429,9 @@ Kontrolór bude mať možnosť aukciu schváliť. Po schválení sa [pozívací 
 
 K akcií bude mať prístup iba kontrolór.
 
-Po schválení je správca kontrolór presmerovaný na stránku "Zoznam ponúk" kde následne vyberie výhercu. Ak bol zvolený víťaz, je mu automaticky zaslaný [gratulačný mail](#mail-súťažiacemu-o-výhre). Ostatným zúčastneným je odoslaný [mail s poďakovaním za účasť](#mail-súťažiacemu-s-poďakovaním-za-účasť).
+Po schválení je správca kontrolór presmerovaný na stránku "Zoznam ponúk" kde následne vyberie výhercu. V tomto kroku môže rozkliknúť "Upraviť formát mailov" a upraviť mail odoslaný víťazovy a ostatným súťažiacim. Ak bol zvolený víťaz, je mu automaticky zaslaný [gratulačný mail](#mail-súťažiacemu-o-výhre). Ostatným zúčastneným je odoslaný [mail s poďakovaním za účasť](#mail-súťažiacemu-s-poďakovaním-za-účasť).
+
+Pri výbere víťaza aukcie je možné vyplniť dôvod výberu. Dôležité je to hlavne pri výbere súťažiaceho ktorý nepodal ponuku s najnižšou cenou.
 
 O schválení priebehu aukcie bude [operátor informovaný mailom](#mail-operátorovi-o-schválení-priebehu-aukcie).
 
@@ -698,3 +706,55 @@ Predmet: **Ukončenie aukcie**
 ##Pozývací list
 
 Šablóna pozývacieho listu sa nachádza v súbore pozyvaci-list.odt.
+
+#Cenová ponuka
+
+Tento detailný návrh je záväzný. Cenová ponuka platí výhradne na funkcionalitu popísanú v tomto dokumente. Akékoľvek zmeny funkcionality oproti tomuto textu budú predmetom extra zmluvy.
+
+Projekt bude rozdelený do niekoľkých fáz. Fázy budú po sebe nasledovať jedna po druhej, nie paralelne. Každá fáza je definovaná určením cieľa, samotnou prácou, kontrolou zákazníka a vyplatením dohodnutej čiastky za odvedenú prácu. Cena je vždy odvodená od predpokladanej časovej náročnosti v hodinách. Dohodnutá odmena autora za prácu je 5€/bez DPH. Cena je pevná, nebude sa s ňou hýbať. V prípade zvýšenej časovej náročnosti projektu oproti plánu náklady znáša autor. Platba prebehne vždy po ukončení fázy v prospech bankového účtu autora diela. Práca na ďalšej fáze bude vždy započatá až po prijatí úplaty za odvedenú prácu.
+
+Ceny sú udávané bez DPH.
+
+##Záruka produktu
+
+Autor sa zaväzuje podrobiť produkt testovaniu a dodať ho v najvyššej možnej kvalite.
+
+Klient je v prípade odhalenia chýb (nekorektného správania oproti detailnému návrhu) povinný chybu autorovy nahlásiť. Autor sa zaväzuje chyby bezplatne odstrániť v najkratšom možnom čase.
+
+Táto záruka je platná dva roky od záverečného odovzdania produktu do používania klientovy.
+
+Autor nenesie zodpovednosť za škodu spôsobenú dielom.
+
+##Fázy projektu
+
+###Vypracovanie detailného návrhu
+
+Časová náročnosť: **32 hodín**
+
+Cena: **160 €/bez DPH**
+
+Cieľom je verne zachytiť požiadavky klienta a zozumiteľne ich spísať do dokumentu. Výsledný dokument musí obsahovať popis všetkých funkcionalít ktoré zákazník od navrhovaného systému očakáva. Výsledný dokument je záväzný, preto je nutné aby bol vypracovaný pochopiteľne a jednoznačne. V prípade pochybností o správnosti prípadne neobsiahnutí všetkých požadovaných funkcií je povinnosťou zákazníka chybu nahlásiť a schváliť až dokument ktorý je plne korektný.
+
+###Základné používateľské funkcie
+
+Časová náročnosť: **74 hodín**
+
+Cena: **370 €/bez DPH**
+
+Predmetom tejto fázy je funkčnosť popísaná v kapitolách [4.1 Používateľský účet](#používateľský-účet) a [4.2. Skupiny používateľov](#skupiny-používateľov).
+
+###Hlavné funkcie aukčného portálu
+
+Časová náročnosť: **104 hodín**
+
+Cena: **520 €/bez DPH**
+
+Predmetom tejto fázy je funkčnosť popísaná v kapitolách [4.3 Kategorizácia](#kategorizácia), [4.4 Aukcia](#aukcia) a [4.5 Ponuky](#ponuky).
+
+###Záverečné testovanie a odovzdanie projektu
+
+Časová náročnosť: **30 hodín**
+
+Cena: **150 €/bez DPH**
+
+V tejto fáze bude produkt otestovaný ako celok a po odstránení nájdených nedostatkov nasadený na klientov server.
