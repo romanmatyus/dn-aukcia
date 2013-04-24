@@ -619,13 +619,15 @@ Predmet: **Pozastavenie aukcie**
 
 ###Mail súťažiacemu o výhre
 
-Predmet: **Vyhrali Ste**
+Predmet: **Boli Ste vybraný ako dodávateľ**
 
->Vážený {MENO},
+>Vážený obchodný partner,
 >
->gratulujeme, vyhrali Ste v aukcií {NÁZOV AUKCIE S AKTÍVNYM ODKAZOM NA DETAIL AUKCIE}.
+>dovoľujeme si Vám oznámiť, že základe výsledkov elektronickej aukcie z {DÁTUM AUKCIE} bola Vaša spoločnosť vybratá ako dodávateľ.
 >
->Čoskoro Vás kontaktujeme.
+>Do troch týždňov Vám bude doručená objednávka na obalový materiál. 
+>
+>Prosím o zaslanie návrhu KZ k predmetnej objednávke.
 >
 >S pozdravom DRU, a. s.
 
@@ -633,11 +635,13 @@ Predmet: **Vyhrali Ste**
 
 Predmet: **Vaša ponuka nebola vybraná**
 
->Vážený {MENO},
+>Vážený obchodný partner,
 >
->žiaľ, v aukcií {NÁZOV AUKCIE} sme si nevybrali Vašu ponuku.
+>ďakujeme za Vašu účasť vo Výberovom konaní {NÁZOV AUKCIE} spoločnosti DRU a.s. Zvolen, ktoré sa uskutočnilo dňa {DÁTUM AUKCIE}.
 >
->Ďakujeme za účasť a dúfame, že sa zúčastníte aj budúcej aukcie.
+>Na základe výsledkov výberového konania si Vám dovoľujeme oznámiť, že Vaša spoločnosť nebola vybratá za dodávateľa.
+>
+>Prajeme Vám veľa obchodných úspechov a tešíme sa na prípadnú budúcu spoluprácu.
 >
 >S pozdravom DRU, a. s.
 
