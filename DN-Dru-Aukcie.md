@@ -379,7 +379,7 @@ Formulár pre pridanie aukcie:
 - Zaškrtávacie pole "Zobraziť súťažiacemu jeho poradie"
 - Zaškrtávacie pole "Zobraziť súťažiacemu najnižšiu ponuku"
 - Zaškrtávacie pole "Zobraziť súťažiacemu počet súťažiacich"
-- Výberové pole "Kontrolór schvalujúci spustenie aukcie"
+- Výberové pole "Kontrolór schvalujúci spustenie aukcie a výber víťaza"
 	- bude obsahovať zoznam používateľov
 - Výberové pole "Kontrolór schvalujúci víťaza aukcie"
 	- bude obsahovať zoznam používateľov
@@ -421,17 +421,24 @@ Ak voľbu "Zmena podmienok aukcie" potvrdí kontrolór, budú [súťažiaci info
 
 ###Schválenie aukcie
 
-K akcií bude mať prístup iba kontrolór.
+K akcií bude mať prístup iba kontrolór s oprávnením.
 
 Kontrolór bude mať možnosť aukciu schváliť. Po schválení sa [pozývací mail](#mail-súťažiacim-o-pridaní-aukcie) rozošle súťažiacim. Ak to je verejná aukcia zverejní sa v RSS a tiež sa pošle [mail](#mail-sledujúcim-o-pridaní-aukcie) všetkým čo si vybrali, že chcú byť informovaní o danom type aukcie.
 
-###Schválenie priebehu aukcie
 
-K akcií bude mať prístup iba kontrolór.
+###Výber víťaza
 
-Po schválení je správca kontrolór presmerovaný na stránku "Zoznam ponúk" kde následne vyberie výhercu. V tomto kroku môže rozkliknúť "Upraviť formát mailov" a upraviť mail odoslaný víťazovi a ostatným súťažiacim. Ak bol zvolený víťaz, je mu automaticky zaslaný [gratulačný mail](#mail-súťažiacemu-o-výhre). Ostatným zúčastneným je odoslaný [mail s poďakovaním za účasť](#mail-súťažiacemu-s-poďakovaním-za-účasť).
+K akcií bude mať prístup iba kontrolór s oprávnením.
+
+Po ukončení aukcie bude môcť pri vytváraní aukcie zvolený kontrolór vybrať víťaza zo zoznamu ponúk.
 
 Pri výbere víťaza aukcie je možné vyplniť dôvod výberu. Dôležité je to hlavne pri výbere súťažiaceho ktorý nepodal ponuku s najnižšou cenou.
+
+###Schválenie priebehu aukcie
+
+K akcií bude mať prístup iba kontrolór s oprávnením.
+
+Po schválení je kontrolór presmerovaný na stránku kde môže rozkliknúť "Upraviť formát mailov" a upraviť mail odoslaný víťazovi a ostatným súťažiacim. Ak bol zvolený víťaz, je mu automaticky zaslaný [gratulačný mail](#mail-súťažiacemu-o-výhre). Ostatným zúčastneným je odoslaný [mail s poďakovaním za účasť](#mail-súťažiacemu-s-poďakovaním-za-účasť).
 
 O schválení priebehu aukcie bude [operátor informovaný mailom](#mail-operátorovi-o-schválení-priebehu-aukcie).
 
